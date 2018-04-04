@@ -25,4 +25,12 @@ if(favTeam === 'Raiders') {
      alert('Please answer with Raiders or Seahawks');
 
     }
+    var favMusic = prompt('Do I like Rock or Heavy Metal more?')
+    if(favMusic === 'Heavy Metal') {
+        alert('Great choice lets go join a mosh pit');
+    } else if(favMusic === 'Rock'){
+        alert('Lets be dumb and go crowd surfing');
+    }else{
+        alert('Choose your destiny by selecting Heavy Metal or Rock');
+    }
 
