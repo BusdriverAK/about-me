@@ -33,4 +33,11 @@ if(favTeam === 'Raiders') {
     }else{
         alert('Choose your destiny by selecting Heavy Metal or Rock');
     }
-
+    var favCandy = prompt('Do I like Skittles better or Turkish Delight?')
+    if(favCandy === 'Skittles') {
+        alert('That would be correct'); 
+    } else if(favCandy === 'Turkish Delight'){
+        alert('Eww gross that is not even remotely close');
+    }else{
+        alert('Thanks for taking my quiz');
+    } 
