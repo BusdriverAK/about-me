@@ -8,4 +8,11 @@ if(ownDogs === 'yes') {
 } else {
     alert('Please answer with yes or no');
 }
-
+var favColor = prompt('Is my favorite color black or green?')
+if(favColor ==='green') {
+    alert('Wow you must know me very well then!');
+ } else if(favColor === 'black'){
+        alert('Are you crazy why are you even taking this test?!?!');
+    } else{
+        alert('Please answer with green or black!').toLowerCase();
+}
