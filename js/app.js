@@ -47,17 +47,21 @@ if(favMusic === 'Heavy Metal') {
     console.log('Thanks for taking my quiz hope you had fun');
   }
 }
-var favNumber 
+var guessNumber;
 var favNumber = 17;
 var favNumbertries = 4;
-var numGuess;
+var flag = false;
 do{
-    var favNumber = parseInt(prompt('Can you guess my favorite number'));
-    
-
-}
-
-
+  guessNumber = parseInt(prompt('Can you guess my favorite number'));
+  favNumbertries --;
+  if(guessNumber === favNumber)
+  { flag = true;
+    alert('You quessed right');
+  } else if(favNumbertries === 0) {
+    flag = true;
+    alert('You are out of attempts');
+  }
+} while(flag === false);
 
 var favIceCream = ['rocky road, cookie dough, mint chip, cotton candy, jamocha almond fudge'];
 console.log(favIceCream.length);
@@ -69,8 +73,7 @@ for(var i = 0; i < favIceCream.length; i++) {
   } else if (i < 3) {
     prompt();
     continue;
-  } else {
+  } else{
     alert('Sorry no that is not correct');
   }
 }
-
