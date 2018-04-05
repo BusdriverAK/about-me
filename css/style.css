@@ -1,0 +1,9 @@
+body {
+    font-family: Aerial;
+    background-color: silver;
+    padding: 10px;
+}
+.page{
+    background-color: black;
+    padding: inherit; 
+}
