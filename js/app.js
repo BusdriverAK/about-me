@@ -46,44 +46,49 @@
 //     alert('Maybe next time');
 //   }
 // }
-// var guessNumber;
-// var favNumber = 17;
-// var favNumbertries = 4;
-// var flag = false;
+var guessNumber;
+var favNumber = 17;
+var favNumbertries = 4;
+var flag = false;
+do{
+  guessNumber = parseInt(prompt('Can you guess my favorite number'));
+  favNumbertries --;
+  if(guessNumber === favNumber)
+  { flag = true;
+    alert('You guessed right');
+  } else if(favNumbertries === 0) {
+    flag = true;
+    alert('You are out of attempts');
+  } else if(guessNumber < favNumber) {
+    alert('thats to low try again');
+  } else if(guessNumber > favNumber){
+    alert('thats to high try again');
+  } else {
+    alert('please enter a number');
+  }
+} while(flag === false);
+
+// var favIceCream = ['rocky road', 'cookie dough', 'mint chip', 'cotton candy', 'jamocha almond fudge'];
+// console.log(favIceCream.length);
+// var matchCondition = -1;
+// var limitCounter = 0;
+
 // do{
-//   guessNumber = parseInt(prompt('Can you guess my favorite number'));
-//   favNumbertries --;
-//   if(guessNumber === favNumber)
-//   { flag = true;
-//     alert('You quessed right');
-//   } else if(favNumbertries === 0) {
-//     flag = true;
-//     alert('You are out of attempts');
+//   var guessFlavor =  prompt('Can you guess my favorite flavor of icecream?').toLowerCase();
+
+//   for (var j = 0; j < favIceCream.length; j++) {
+//     if(guessFlavor === favIceCream[j]) {
+//       matchCondition = j;
+      
+//       break;
+//     }
 //   }
-// } while(flag === false);
+//   if (matchCondition > -1) {
+//     alert('that is correct');
+//   }
+//   else {
+//     alert('Sorry no that is not correct');
+//     limitCounter++;
 
-var favIceCream = ['rocky road', 'cookie dough', 'mint chip', 'cotton candy', 'jamocha almond fudge'];
-console.log(favIceCream.length);
-
-
-// Loop for # pf attempts
-for(var i = 0; i < 4; i++) {
-  var guessFlavor =  prompt('Can you guess my favorite flavor of icecream?').toLowerCase();
-
-  var isOk = false;
-
-  // Loop for checking answer
-  for (var j = 0; j < favIceCream.length; j++) {
-    if(guessFlavor === favIceCream[j]) {
-      alert('Correct!');
-      isOK = true;
-      break;
-    } else {
-      alert('Sorry no that is not correct');
-    }
-  }
-
-  if (isOK === true) {
-    break;
-  }
-}
+//   }
+// }while(limitCounter <5 && matchCondition === -1);
