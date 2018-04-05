@@ -21,15 +21,15 @@ function funcColor(){
   if (favColor === 'green') {
     alert('Wow you must know me very well then!');
     console.log('Wow you must know me very well then!');
-}
+  }
   else if (favColor === 'black') {
     alert('Are you crazy why are you even taking this test?!?!');
     console.log('Are you crazy why are you even taking this test?!?!');
-}
+  }
   else {
     alert('Please answer with green or black!');
     console.log('PLease answer with green or black');
-}
+  }
 }
 funcColor();
 
@@ -38,15 +38,15 @@ function funcTeam(){
   if (favTeam === 'Raiders') {
     alert('That is right I bleed black and silver baby!');
     console.log('That is right I bleed black and silver baby!');
-}
+  }
   else if (favTeam === 'Seahawks') {
     alert('Nope sorry wrong answer was not rasied a Seahawks fan!');
     console.log('Nope sorry wrong answer was not raised a Seahawks fan!');
-}
+  }
   else {
     alert('Please answer with Raiders or Seahawks');
     console.log('Please answer with Raiders or Seahawks');
-}
+  }
 }
 funcTeam();
 
@@ -54,13 +54,13 @@ function funcMusic(){
   var favMusic = prompt('Do I like Rock or Heavy Metal more?');
   if (favMusic === 'Heavy Metal') {
     alert('Great choice lets go join a mosh pit');
-}
+  }
   else if (favMusic === 'Rock') {
     alert('Lets be dumb and go crowd surfing');
-}
+  }
   else {
     console.log('Choose your destiny by selecting Heavy Metal of Rock');
-}}
+  }}
 funcMusic();
 
 function funcCandy(){
